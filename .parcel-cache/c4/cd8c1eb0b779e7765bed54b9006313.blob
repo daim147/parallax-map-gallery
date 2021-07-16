@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="fe27e53d38d480e02d71b35e0a2e823d">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script async="" src="728bf9aa6497a0f58c4165e3d4b2e2aa"></script>
+
+    <link rel="stylesheet" href="d0efc211f9c0a45e53eae413fba005d6">
+
+</head>
+
+<body>
+    <div class="hy">
+        <h2>Scroll Down</h2>
+
+    </div>
+    <div class="js-parallax parallax" data-img="https://images.unsplash.com/photo-1611367540722-9825e219be45?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1689&ixid=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1920">
+
+        <h1>Hy I am Husnain Syed</h1>
+
+
+    </div>
+
+
+    <div id="aniimated-thumbnials">
+
+        <a href="41763961d5e98f7ef386b28af6e537f5" data-lg-size="1600-2400">
+            <img src="41763961d5e98f7ef386b28af6e537f5">
+        </a>
+        <a href="2c529f6ab10cd463ccfcf13044dc896e" data-lg-size="1600-2400">
+            <img src="2c529f6ab10cd463ccfcf13044dc896e">
+        </a>
+        <a href="d1d6d5d3eee0409e0c09f0dfe51f3fd7" data-lg-size="1600-2400">
+            <img src="d1d6d5d3eee0409e0c09f0dfe51f3fd7">
+        </a>
+        <a href="34f0af9fd2e3b20196736a9695ad4594" data-lg-size="1600-2400">
+            <img src="34f0af9fd2e3b20196736a9695ad4594">
+        </a>
+        <a href="e1279e246ffc6ed561a901eee0aa08f7" data-lg-size="1600-2400">
+            <img src="e1279e246ffc6ed561a901eee0aa08f7">
+        </a>
+        <a href="06a03d106bbeb8effb4ed5c355a26032" data-lg-size="1600-2400">
+            <img src="06a03d106bbeb8effb4ed5c355a26032">
+        </a>
+        <a href="adc28986a244984c0edfcfe3ebe5ead1" data-lg-size="1600-2400">
+            <img src="adc28986a244984c0edfcfe3ebe5ead1">
+        </a>
+        <a href="a0f457ec88492bfcd0599efff9431ab5" data-lg-size="1600-2400">
+            <img src="a0f457ec88492bfcd0599efff9431ab5">
+        </a>
+
+    </div>
+
+
+    <div id="map"></div>
+
+
+    <script src="15c1eae436b41f1b5fad600ccf7df6a1" async=""></script>
+</body>
+
+</html>

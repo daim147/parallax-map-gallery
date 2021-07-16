@@ -1,0 +1,53 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+_parcelHelpers.export(exports, "getRandomId", function () {
+  return getRandomId;
+});
+_parcelHelpers.export(exports, "getScrollTop", function () {
+  return getScrollTop;
+});
+_parcelHelpers.export(exports, "getScrollLeft", function () {
+  return getScrollLeft;
+});
+_parcelHelpers.export(exports, "getOffset", function () {
+  return getOffset;
+});
+_parcelHelpers.export(exports, "debounce", function () {
+  return debounce;
+});
+var getRandomId = function () {
+  return (Date.now().toString(36) + Math.random().toString(36).substr(2, 5)).toUpperCase();
+};
+var getScrollTop = function () {
+  return window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+};
+var getScrollLeft = function () {
+  return window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft || 0;
+};
+var getOffset = function (el) {
+  var rect = el.getBoundingClientRect();
+  return {
+    top: rect.top + getScrollTop(),
+    left: rect.left + getScrollLeft()
+  };
+};
+var debounce = function (func, wait, immediate) {
+  if (immediate === void 0) {
+    immediate = false;
+  }
+  var timeout;
+  return function () {
+    var later = function () {
+      timeout = undefined;
+      if (!immediate) {
+        func();
+      }
+    };
+    var callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = window.setTimeout(later, wait);
+    if (callNow) {
+      func();
+    }
+  };
+};

@@ -1,0 +1,61 @@
+var _lightgallery = require("lightgallery");
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+var _lightgalleryDefault = _parcelHelpers.interopDefault(_lightgallery);
+require("lightgallery/css/lightgallery.css");
+require("lightgallery/css/lg-zoom.css");
+require("lightgallery/css/lg-thumbnail.css");
+require("lightgallery/css/lg-autoplay.css");
+require("lightgallery/css/lg-rotate.css");
+var _lightgalleryPluginsThumbnail = require("lightgallery/plugins/thumbnail");
+var _lightgalleryPluginsThumbnailDefault = _parcelHelpers.interopDefault(_lightgalleryPluginsThumbnail);
+var _lightgalleryPluginsZoom = require("lightgallery/plugins/zoom");
+var _lightgalleryPluginsZoomDefault = _parcelHelpers.interopDefault(_lightgalleryPluginsZoom);
+var _lightgalleryPluginsAutoplay = require("lightgallery/plugins/autoplay");
+var _lightgalleryPluginsAutoplayDefault = _parcelHelpers.interopDefault(_lightgalleryPluginsAutoplay);
+var _lightgalleryPluginsRotate = require("lightgallery/plugins/rotate");
+var _lightgalleryPluginsRotateDefault = _parcelHelpers.interopDefault(_lightgalleryPluginsRotate);
+var _backpax = require("backpax");
+var _backpaxDefault = _parcelHelpers.interopDefault(_backpax);
+_lightgalleryDefault.default(document.getElementById("aniimated-thumbnials"), {
+  plugins: [_lightgalleryPluginsZoomDefault.default, _lightgalleryPluginsThumbnailDefault.default, _lightgalleryPluginsAutoplayDefault.default, _lightgalleryPluginsRotateDefault.default],
+  mode: "lg-slide-vertical-growth",
+  zoomFromOrigin: false
+});
+new _backpaxDefault.default(".js-parallax");
+var initMap = function () {
+  const map = new google.maps.Map(document.getElementById("map"), {
+    center: {
+      lat: 37.7893719,
+      lng: -122.3942
+    },
+    zoom: 16,
+    heading: 320,
+    tilt: 47.5,
+    mapId: "90f87356969d889c"
+  });
+  const buttons = [["Rotate Left", "rotate", 20, google.maps.ControlPosition.LEFT_CENTER], ["Rotate Right", "rotate", -20, google.maps.ControlPosition.RIGHT_CENTER], ["Tilt Down", "tilt", 20, google.maps.ControlPosition.TOP_CENTER], ["Tilt Up", "tilt", -20, google.maps.ControlPosition.BOTTOM_CENTER]];
+  buttons.forEach(([text, mode, amount, position]) => {
+    const controlDiv = document.createElement("div");
+    const controlUI = document.createElement("button");
+    controlUI.classList.add("ui-button");
+    controlUI.innerText = `${text}`;
+    controlUI.addEventListener("click", () => {
+      adjustMap(mode, amount);
+    });
+    controlDiv.appendChild(controlUI);
+    map.controls[position].push(controlDiv);
+  });
+  const adjustMap = function (mode, amount) {
+    switch (mode) {
+      case "tilt":
+        map.setTilt(map.getTilt() + amount);
+        break;
+      case "rotate":
+        map.setHeading(map.getHeading() + amount);
+        break;
+      default:
+        break;
+    }
+  };
+};
+console.log(initMap);

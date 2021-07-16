@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="6e03fc8f7755e0659099adc26d0d3fc6"></script>
+
+    <link rel="stylesheet" href="563fd50d718577864c67592ae4509f0a">
+
+</head>
+
+<body>
+    <div class="hy">
+        <h2>Scroll Down</h2>
+
+    </div>
+    <div class="js-parallax parallax" data-img="https://images.unsplash.com/photo-1611367540722-9825e219be45?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1689&ixid=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1920">
+
+        <h1>Hy I am Husnain Syed</h1>
+
+
+    </div>
+
+
+    <div id="aniimated-thumbnials">
+
+        <a href="37959f3dcf17601893dbbffc40178938" data-lg-size="1600-2400">
+            <img src="37959f3dcf17601893dbbffc40178938">
+        </a>
+        <a href="586f1f6eb0e41399a40c12f335ad8b21" data-lg-size="1600-2400">
+            <img src="586f1f6eb0e41399a40c12f335ad8b21">
+        </a>
+        <a href="e1b6bd4a0d4f0698a5707e411cd26847" data-lg-size="1600-2400">
+            <img src="e1b6bd4a0d4f0698a5707e411cd26847">
+        </a>
+        <a href="54a29bbf199c4e72ecff0a6caea37c9d" data-lg-size="1600-2400">
+            <img src="54a29bbf199c4e72ecff0a6caea37c9d">
+        </a>
+        <a href="3b13da4be3e6cbb0f2d4af92da6b4afe" data-lg-size="1600-2400">
+            <img src="3b13da4be3e6cbb0f2d4af92da6b4afe">
+        </a>
+        <a href="827e124674d463e4a106d3ad6f8b88f2" data-lg-size="1600-2400">
+            <img src="827e124674d463e4a106d3ad6f8b88f2">
+        </a>
+        <a href="1efb90b1aedfa595f292cc6996d14302" data-lg-size="1600-2400">
+            <img src="1efb90b1aedfa595f292cc6996d14302">
+        </a>
+        <a href="9ea88547211a2762542c742cb18eba40" data-lg-size="1600-2400">
+            <img src="9ea88547211a2762542c742cb18eba40">
+        </a>
+
+    </div>
+
+
+    <div id="map"></div>
+
+
+
+
+    <script src="e3574e50927cd8875682a88cd71747c2" async=""></script>
+
+    <script data-parcel-key="f083d5161b113fef7367ed9e875b6f2c">
+        console.log(window.initMap)
+    </script>
+</body>
+
+</html>
